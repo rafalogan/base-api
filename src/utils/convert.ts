@@ -1,21 +1,7 @@
 import bcrypt from 'bcrypt';
 import { Request } from 'express';
-import {
-	CustomFile,
-	EventFiles,
-	EventRaw,
-	ICategoryModel,
-	IEvent,
-	IFile,
-	IPayCard,
-	IPayment,
-	IPayPortador,
-	OrderOptions,
-	ReadOptions,
-	UpdatePasswordOptions,
-} from 'src/repositories/types';
+import { CustomFile } from 'src/repositories/types';
 import { baseUrl, storage } from 'src/utils/validate';
-import { Payment } from 'src/repositories/entities';
 import { onLog } from 'src/core/handlers';
 
 export const snakeToCamel = (field: string): string => {

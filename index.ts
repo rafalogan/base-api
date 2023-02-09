@@ -1,4 +1,4 @@
 import './src/utils/module-alias';
 import { app } from 'src/server';
 
-(async () => app.init())();
+(async () => app.exec())();
